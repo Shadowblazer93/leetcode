@@ -1,0 +1,1 @@
+def fizzBuzz(n):return [(('Fizz' if not i%3 else '')+('Buzz' if not i%5 else '')) or str(i) for i in range(1,n+1)]
