@@ -10,6 +10,9 @@ def arrayRankTransform(arr):
     
     return [ranks[r] for r in arr]
         
+def arrayRankTransform2(arr):
+    ranks = {j:i+1 for i,j in enumerate(sorted(set(arr)))}
+    return [ranks[i] for i in arr]
 
 print(arrayRankTransform([40,10,20,30]))
 print(arrayRankTransform([100,100,100]))
