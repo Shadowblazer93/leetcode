@@ -3,7 +3,7 @@ def countFairPairs(nums,lower,upper):
     n = len(nums)
 
     for i in range(n):
-        for j in range(n):
+        for j in range(1+i,n):
             if i>=j: continue
             ijsum = nums[i] + nums[j]
             if ijsum < lower or ijsum > upper: continue
