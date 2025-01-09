@@ -1,3 +1,6 @@
+# include <stdio.h> 
+# include <stdbool.h>
+
 int prefixCount(char** words, int wordsSize, char* pref) {
     double n = strlen(pref), res = 0;
 
