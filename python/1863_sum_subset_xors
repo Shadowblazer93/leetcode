@@ -1,0 +1,13 @@
+def subsetXORSum(nums):
+    n = len(nums)
+    res = 0
+    subs = [[]]
+    for n in nums: subs+= [s+[n] for s in subs]
+
+    for s in subs:
+        if s:
+            xor = s.pop(0)
+            for k in s: xor^=k
+            res+=xor
+    
+    return res
